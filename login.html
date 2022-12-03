@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>登录账户</title>
+	</head>
+	<body>
+	<div class="banner">
+		<img src="img/banner.jpg">
+	</div>
+	<div class="login_place">
+		<div class="logo">
+			<svg class="over_logo" style="width: 60px; margin:40px 0px 0px 40px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 808 808" class="mi-logo"><g data-v-777bda80=""><path data-v-777bda80="" fill="#ff6900" d="M723.79,84.42C647.55,8.48,537.94,0,404,0,269.89,0,160.12,8.58,83.92,84.72S0,270.43,0,404.39,7.74,648,84,724.14,269.9,808,404,808s243.85-7.71,320-83.86,84-185.78,84-319.75C808,270.25,800.16,160.54,723.79,84.42Z"></path> <path data-v-777bda80="" fill="#fff" d="M374.26,553.72a5,5,0,0,1-5.06,5H300.3a5.05,5.05,0,0,1-5.12-5V373.53a5.05,5.05,0,0,1,5.12-5h68.9a5,5,0,0,1,5.06,5Z"></path> <path data-v-777bda80="" fill="#fff" d="M509.18,553.72a5.05,5.05,0,0,1-5.09,5H438.5a5,5,0,0,1-5.1-5V398.26c-.07-27.15-1.62-55-15.64-69.06-12-12.09-34.51-14.86-57.88-15.44H241a5,5,0,0,0-5.07,5v235a5.07,5.07,0,0,1-5.12,5H165.16a5,5,0,0,1-5.06-5V254.31a5,5,0,0,1,5.06-5H354.52c49.49,0,101.22,2.26,126.74,27.81s27.92,77.3,27.92,126.85Z"></path> <path data-v-777bda80="" fill="#fff" d="M644.29,553.72a5.06,5.06,0,0,1-5.09,5H573.57a5,5,0,0,1-5.08-5V254.31a5,5,0,0,1,5.08-5H639.2a5.06,5.06,0,0,1,5.09,5Z"></path></g></svg></a>
+		</div>
+		
+		<div id="from">
+			<h1>小米账户</h1>
+				<form action="#" method="post">
+				<p><strong>手机号码</strong><br/><select class="box areabox area" name="area">
+					<option value="China">CN +86</option>
+					<option value="America">US +87</option>
+					<option value="Japan">JP +88</option>
+					<option value="India">IN +89</option>
+					</select>
+				<input class="box phonebox"  type="text" name="phone" placeholder="手机号"></p>
+				<p><strong>密码</strong><br/><input class="namebox box"  type="password" name="password" placeholder="至少6个字符"></p>
+				<p><input  class="box rememberbox" type="checkbox" name="rememberme" value="1"> 我已阅读并同意网站的<a href="#">使用条件</a>及<a href="#">隐私声明</a>。</p>
+				<p>还没有账户？<a href="register.html">点击注册</a></p>
+				<p><input class="picbutton" type="image" src="img/nextbutton.png" value="Submit" width="250px"></p>
+				</form>
+		</div>
+		
+		
+	</div>
+	<div class="menu">
+		<a class="over_button" href="#">用户协议</a>
+		<a class="over_button" href="#">隐私政策</a>
+		<a class="over_button" href="#">帮助中心</a>
+	</div>
+	
+	
+	
+	
+	
+	<style>
+		#from{
+			margin:40px 0px 0px 30px;
+			width: 600px;
+			/* border:3px solid green; */
+			/* background-color: aqua; */
+		}
+		.menu{
+			padding: 60px 0px 0px 0px;
+			width:5000px;
+			 background-color: white;
+			/* border:3px solid green; */
+		}
+		.menu a{
+			color: RGB(131,147,183);
+			text-decoration:none;
+		}
+		.menu a:hover{
+			color:RGB(255,105,0);
+		}
+		body{
+			margin:0;
+			padding:0;
+			display: flex;
+		}
+		.login_place{
+			/* float:right; */
+			width:280px;
+			height: 100vh;
+			/* border:1px solid blue; */
+			background-color: white;
+			/* display:flex; */
+			
+		}
+		.banner img{
+			height: 100vh;
+		}
+		.banner{
+			width:200px;
+			height: 100%;
+			/* border:1px solid red; */
+		}
+	</style>
+	</body>	
+</html>

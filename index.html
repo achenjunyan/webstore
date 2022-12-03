@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8" content="width=device-width, initial-scale=1.0">
+		<title>小米商城</title>
+		<link href="style/bootstrap.min.css" rel="stylesheet">
+		  <script src="style/bootstrap.bundle.min.js"></script>
+		
+        <meta charset="utf-8">
+        <style>
+ 
+            .menu-bar {
+                height: 96px;
+            }
+            .menu-bar .container {
+                display: flex;
+                align-items: center;
+                height: 100%;
+            }
+ 
+            .menu-bar .container .col-2 {
+                 width: calc(100% / 6);
+                 height: 100%;
+            }
+            .menu-bar .container .col-8 {
+                 width: 66%;
+                 height: 100%;
+            }
+ 
+            .menu-list {
+                display: flex;
+                justify-content: center;
+                height: 100%;
+            }
+			.menu-list a{
+				font-size: 18px;
+				color:black;
+				text-decoration:none;
+				
+			}
+			.menu-list a:hover{
+				color:RGB(255,105,0);
+			}
+ 
+            .xiaomi-logo {
+                height: 100%;
+            }
+ 
+            .flex-center {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+ 
+            .menu-item {
+                padding: 0 8px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+            }
+ 
+            .bg-red {
+                background-color: red;
+            }
+ 
+            .bg-blue {
+                background-color: blue;
+            }
+ 
+            .bg-yellow {
+                background-color: yellow;
+            }
+			.class_shouji,.class_dianshi,.class_shoubiao,.class_dingzhi,.class_jiadian,.class_qiye,.class_xuesheng,.class_xinren,.class_xianshiqi{
+				width: 80px;
+				/* background-color: red; */
+				display: inline-block;	
+				margin-left:50px;
+			}
+			.products_class{
+				/* border:2px solid green; */
+				width: 1100px;
+				margin-top:20px;
+				
+			}
+			.lunbo{
+				/* width: 1300px; */
+				
+			}
+        </style>
+    </head>
+    <body>
+		<!-- 顶端黑色条 -->
+        <div class="lit_title">
+            <div class="lit_title_left">
+                <a class="menu_button" href="home.html">小米官网</a><span>|<span>
+                <a class="menu_button" href="#">小米商城</a><span>|<span>
+                <a class="menu_button" href="#">MIUI</a><span>|<span>
+                <a class="menu_button" href="#">loT</a><span>|<span>
+                <a class="menu_button" href="#">云服务</a><span>|<span>
+                <a class="menu_button" href="#">天星数科</a><span>|<span>
+                <a class="menu_button" href="#">有品</a><span>|<span>
+                <a class="menu_button" href="#">小爱开放平台</a><span>|<span>
+                <a class="menu_button" href="#">企业团购</a><span>|<span>
+                <a class="menu_button" href="#">资质证照</a><span>|<span>
+                <a class="menu_button" href="#">协议规则</a><span>|<span>
+                <a class="menu_button" href="#">下载app</a><span>|<span>
+                <a class="menu_button" href="#">Select Location</a>
+            </div>
+            <div class="lit_title_right">
+                <a class="menu_button" href="login.html">登录</a>
+                <span>|</span>
+                <a class="menu_button" href="register.html">注册</a>
+                <span>|</span>
+                <a class="menu_button" href="#">消息通知</a>
+                <a class="menu_button" href="#">购物车</a>
+            </div>
+        </div>
+        <!-- LOGO和菜单栏 -->
+        <div class="menu-bar">
+            <div class="container">
+                <div class="col-2">
+                    <div class="xiaomi-logo flex-center">
+                            <svg style="width: 60px; margin:0px 20px 0px 0px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 808 808" class="mi-logo"><g data-v-777bda80=""><path data-v-777bda80="" fill="#ff6900" d="M723.79,84.42C647.55,8.48,537.94,0,404,0,269.89,0,160.12,8.58,83.92,84.72S0,270.43,0,404.39,7.74,648,84,724.14,269.9,808,404,808s243.85-7.71,320-83.86,84-185.78,84-319.75C808,270.25,800.16,160.54,723.79,84.42Z"></path> <path data-v-777bda80="" fill="#fff" d="M374.26,553.72a5,5,0,0,1-5.06,5H300.3a5.05,5.05,0,0,1-5.12-5V373.53a5.05,5.05,0,0,1,5.12-5h68.9a5,5,0,0,1,5.06,5Z"></path> <path data-v-777bda80="" fill="#fff" d="M509.18,553.72a5.05,5.05,0,0,1-5.09,5H438.5a5,5,0,0,1-5.1-5V398.26c-.07-27.15-1.62-55-15.64-69.06-12-12.09-34.51-14.86-57.88-15.44H241a5,5,0,0,0-5.07,5v235a5.07,5.07,0,0,1-5.12,5H165.16a5,5,0,0,1-5.06-5V254.31a5,5,0,0,1,5.06-5H354.52c49.49,0,101.22,2.26,126.74,27.81s27.92,77.3,27.92,126.85Z"></path> <path data-v-777bda80="" fill="#fff" d="M644.29,553.72a5.06,5.06,0,0,1-5.09,5H573.57a5,5,0,0,1-5.08-5V254.31a5,5,0,0,1,5.08-5H639.2a5.06,5.06,0,0,1,5.09,5Z"></path></g></svg></a> <span data-v-6f859fef=""> </span>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="menu-list flex-center">
+                        <a class="menu-item">Xiaomi手机</a>
+                        <a class="menu-item">Redmi手机</a>
+                        <a class="menu-item">电视</a>
+                        <a class="menu-item">笔记本</a>
+                        <a class="menu-item">平板</a>
+                        <a class="menu-item">家电</a>
+                        <a class="menu-item">路由器</a>
+                        <a class="menu-item">服务中心</a>
+                        <a class="menu-item">社区</a>
+                    </div>
+                </div>
+                <div style="font-size: 15px;"><input class="box namebox" type="text" name="name">&nbsp;搜索</div>
+            </div>
+        </div>
+<!-- 轮播图 -->
+<!-- 轮播1 -->
+		<div class="lunbo">
+			<div id="lunbo1" class="carousel slide" data-bs-ride="carousel">
+			
+			  <!-- 指标/点 -->
+			  <div class="carousel-indicators">
+				<button type="button" data-bs-target="#lunbo1" data-bs-slide-to="0" class="active"></button>
+				<button type="button" data-bs-target="#lunbo1" data-bs-slide-to="1"></button>
+			  </div>
+			  <div class="carousel-inner">
+				<div class="carousel-item active">
+				  <img src="img/img4.webp" alt="Note12pro" class="d-block" style="width:100%">
+				</div>
+				<div class="carousel-item">
+				  <img src="img/img5.webp" alt="Note12" class="d-block" style="width:100%">
+				</div>
+			  </div>
+			  <button class="carousel-control-prev" type="button" data-bs-target="#lunbo1" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			  </button>
+			  <button class="carousel-control-next" type="button" data-bs-target="#lunbo1" data-bs-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			  </button>
+			</div>
+		</div>
+		<!-- 选机型菜单 -->
+		<div class="menu-list flex-center">
+		<div class="products_class">
+			<div class="class_shouji">
+				<img src="img/shouji.png">
+				<p>手机平板</p>
+				</div>
+				<div class="class_shoubiao">
+					<img src="img/shoubiao.png">
+					<p>手表耳机</p>
+				</div>	
+				<div class="class_dianshi">
+					<img src="img/dianshi.png">
+					<p>电视设备</p>
+				</div>
+				<div class="class_xianshiqi">
+					<img src="img/xianshiqi.png">
+					<p>显示器材</p>		
+				</div>
+				<div class="class_xinren">
+					<img src="img/xinren.png">
+					<p>新人特惠</p>
+				</div>	
+				<div class="class_dingzhi">
+					<img src="img/dingzhi.png">
+					<p>私人定制</p>
+				</div>	
+				<div class="class_xuesheng">
+					<img src="img/xuesheng.png">
+					<p>学生优惠</p>
+				</div>	
+				<div class="class_qiye">
+					<img src="img/qiye.png">
+					<p>企业购买</p>
+				</div>
+			</div>
+		</div>
+		<div class="phone_list flex-center">
+			<a href="products.html">
+			<div class="phone_list_1"><img src="img/products/1.png" ></div>
+			</a>
+			<div class="phone_list_1"><img src="img/products/2.png"></div>
+			<div class="phone_list_1"><img src="img/products/3.png"></div>
+		</div>
+		<div class="miaosha_title flex-center">秒杀专区</div>
+		<div class="miaosha flex-center">
+			
+			<div class="miaosha1">
+				<img width=200px"" src="img/products/s1.png">
+				<p class="pro_name">Galaxy Z Fold3 </p>
+				<p class="pro_jieshao">至高立省2200元</p>
+			</div>
+			<div class="miaosha2">
+				<img width=200px"" src="img/products/s2.png">
+				<p class="pro_name">55英寸级QLED电视Q60A</p>
+				<p class="pro_jieshao">至高立省3590元</p>
+			</div>
+			<div class="miaosha3">
+				<img width=200px"" src="img/products/s3.png">
+				<p class="pro_name">Galaxy Buds Live</p>
+				<p class="pro_jieshao">至高立省300元</p>
+			</div>
+			<div class="miaosha4">
+				<img width=200px"" src="img/products/s4.png">
+				<p class="pro_name">Galaxy S21 Ultra 5G</p>
+				<p class="pro_jieshao">至高立省2200元</p>
+			</div>
+			<div class="miaosha5">
+				<img width=200px"" src="img/products/s5.png">
+				<p class="pro_name">Galaxy buds2</p>
+				<p class="pro_jieshao">至高立省300元</p>
+			</div>
+		</div>
+		<!-- 热销推荐 -->
+		<div class="miaosha_title flex-center" style="background-color:RGB(247,247,247);">手机/平板</div>
+		<div class="gezi1 flex-center">
+			<div class="p_1">
+				<img src="img/p1.jpg">
+			</div>
+
+				<div class="p_2">
+					<img src="img/products/p1.png">
+					<p class="pro_name">Galaxy S22 羽梦白</p>
+					<p class="p2_gongneng">三星 OLED 护眼屏｜骁龙 5G</p>
+					<p>3999元起</p>
+					<img src="img/products/p2.png">
+					<p class="pro_name">Galaxy Tab S8</p>
+					<p class="p2_gongneng">三星 OLED 护眼屏｜骁龙 5G</p>
+					<p>4599元起</p>
+				</div>
+				<div class="p_2">
+					<img src="img/products/p3.png">
+					<p class="pro_name">Galaxy S22 Ultra</p>
+					<p class="p2_gongneng">三星 OLED 护眼屏｜骁龙 5G</p>
+					<p>8099元起</p>
+					<img src="img/products/p4.png">
+					<p class="pro_name">Galaxy S22 幽紫秘境</p>
+					<p class="p2_gongneng">三星 OLED 护眼屏｜骁龙 5G</p>
+					<p>3999元起</p>
+				</div>
+				<div class="p_2">
+					<img src="img/products/p5.png">
+					<p class="pro_name">Galaxy Z Flip4</p>
+					<p class="p2_gongneng">Bespoke Edition｜缤色定制</p>
+					<p>8499元起</p>
+					<img src="img/products/p6.png">
+					<p class="pro_name">Galaxy Tab S8 Ultar</p>
+					<p class="p2_gongneng">三星 OLED 护眼屏｜骁龙 5G</p>
+					<p>8099元起</p>
+				</div>
+			</div>
+			<div class="jiange"></div>
+		</div>
+		<!-- 第二组 -->
+		<div class="miaosha_title flex-center" style="background-color:white;">手表/耳机</div>
+		<div class="gezi2 flex-center">
+			<div class="p_1">
+				<img src="img/p3.png">
+			</div>
+			
+				<div class="p_2">
+					<img align="center" src="img/products/w1.jpg">
+					<p class="pro_name">Galaxy Watch5 Pro</p>
+					<p class="p2_gongneng">45mm｜铂萃黑</p>
+					<p>2899元起</p>
+					<img src="img/products/w2.jpg">
+					<p class="pro_name">Galaxy Watch5 BT</p>
+					<p class="p2_gongneng">44mm｜晴空海岸</p>
+					<p>1799元起</p>
+				</div>
+				<div class="p_2">
+					<img src="img/products/w3.jpg">
+					<p class="pro_name">Galaxy Watch5 LTE</p>
+					<p class="p2_gongneng">44mm｜哥特太空</p>
+					<p>2099元起</p>
+					<img src="img/products/w4.jpg">
+					<p class="pro_name">Galaxy Watch5 BT</p>
+					<p class="p2_gongneng">40mm｜繁樱花园</p>
+					<p>1599元起</p>
+				</div>
+				<div class="p_2">
+					<img src="img/products/w5.jpg">
+					<p class="pro_name">Galaxy buds2 Pro</p>
+					<p class="p2_gongneng">AKG调音｜哥特太空</p>
+					<p>1099元起</p>
+					<img src="img/products/w6.jpg">
+					<p class="pro_name">Galaxy buds2 Pro</p>
+					<p class="p2_gongneng">AKG调音｜幽紫秘境</p>
+					<p>1099元起</p>
+				</div>
+			</div>
+			<div class="jiange_white"></div>
+		</div>
+		<!-- 第三组 -->
+		<div class="miaosha_title flex-center" style="background-color:RGB(247,247,247);">电视/影音</div>
+		<div class="gezi1 flex-center">
+			<div class="p_1">
+				<img src="img/p4.png">
+			</div>
+			
+				<div class="p_2">
+					<img src="img/products/t1.png">
+					<p class="pro_name">画境融入屏 LS01C</p>
+					<p class="p2_gongneng">55英寸级｜AKG外放</p>
+					<p>8499元起</p>
+					<img src="img/products/t2.png">
+					<p class="pro_name">QLED电视 Q60A</p>
+					<p class="p2_gongneng">85英寸级｜QLED屏幕</p>
+					<p>8900元起</p>
+				</div>
+				<div class="p_2">
+					<img src="img/products/t3.png">
+					<p class="pro_name">画境融入屏 LS03C</p>
+					<p class="p2_gongneng">65英寸级｜新品上市</p>
+					<p>11999元起</p>
+					<img src="img/products/t4.png">
+					<p class="pro_name">QLED电视 Q70C</p>
+					<p class="p2_gongneng">65英寸级｜QLED屏幕</p>
+					<p>6199元起</p>
+				</div>
+				<div class="p_2">
+					<img src="img/products/t5.png">
+					<p class="pro_name">QLED电视 Q60A</p>
+					<p class="p2_gongneng">55英寸级｜QLED屏幕</p>
+					<p>3499元起</p>
+					<img src="img/products/t6.png">
+					<p class="pro_name">Neo QLED 8K电视 QN800C</p>
+					<p class="p2_gongneng">新品上市｜8K极清</p>
+					<p>1199元起</p>
+				</div>
+			</div>
+			<div class="jiange"></div>
+		</div>
+		<!-- 第四组 -->
+		<div class="miaosha_title flex-center" style="background-color:white;">显示器/存储</div>
+		<div class="gezi2 flex-center">
+			<div class="p_1">
+				<img src="img/p5.png">
+			</div>
+			
+				<div class="p_2">
+					<img src="img/products/m1.jpg">
+					<p class="pro_name">990 PRO PCIe 4.0 NVMe™</p>
+					<p class="p2_gongneng">M.2 固态硬盘｜1TB</p>
+					<p>1099元起</p>
+					<img src="img/products/m2.jpg">
+					<p class="pro_name">980 NVMe™</p>
+					<p class="p2_gongneng">M.2 固态硬盘｜1TB</p>
+					<p>649元起</p>
+				</div>
+				<div class="p_2">
+					<img src="img/products/m3.jpg">
+					<p class="pro_name">G85QB 电竞显示器</p>
+					<p class="p2_gongneng">34英寸｜曲面OLED</p>
+					<p>9999元起</p>
+					<img src="img/products/m4.jpg">
+					<p class="pro_name">G75T 电竞显示器</p>
+					<p class="p2_gongneng">32英寸｜曲面OLED</p>
+					<p>3999元起</p>
+				</div>
+				<div class="p_2">
+					<img src="img/products/m5.jpg">
+					<p class="pro_name">Odyssey Ark 显示器</p>
+					<p class="p2_gongneng">55英寸｜三星 OLED 护眼屏</p>
+					<p>20999元起</p>
+					<img src="img/products/m6.jpg">
+					<p class="pro_name">G75T 电竞显示器</p>
+					<p class="p2_gongneng">32英寸｜HDR1000</p>
+					<p>3499元起</p>
+				</div>
+			</div>
+			<div class="jiange_white"></div>
+		</div>	
+		<!-- 结尾内容 -->
+				<div class="over flex-center" style="background-color: RGB(250,250,250);">
+					<svg class="over_logo" style="width: 60px; margin:40px 0px 0px 40px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 808 808" class="mi-logo"><g data-v-777bda80=""><path data-v-777bda80="" fill="#ff6900" d="M723.79,84.42C647.55,8.48,537.94,0,404,0,269.89,0,160.12,8.58,83.92,84.72S0,270.43,0,404.39,7.74,648,84,724.14,269.9,808,404,808s243.85-7.71,320-83.86,84-185.78,84-319.75C808,270.25,800.16,160.54,723.79,84.42Z"></path> <path data-v-777bda80="" fill="#fff" d="M374.26,553.72a5,5,0,0,1-5.06,5H300.3a5.05,5.05,0,0,1-5.12-5V373.53a5.05,5.05,0,0,1,5.12-5h68.9a5,5,0,0,1,5.06,5Z"></path> <path data-v-777bda80="" fill="#fff" d="M509.18,553.72a5.05,5.05,0,0,1-5.09,5H438.5a5,5,0,0,1-5.1-5V398.26c-.07-27.15-1.62-55-15.64-69.06-12-12.09-34.51-14.86-57.88-15.44H241a5,5,0,0,0-5.07,5v235a5.07,5.07,0,0,1-5.12,5H165.16a5,5,0,0,1-5.06-5V254.31a5,5,0,0,1,5.06-5H354.52c49.49,0,101.22,2.26,126.74,27.81s27.92,77.3,27.92,126.85Z"></path> <path data-v-777bda80="" fill="#fff" d="M644.29,553.72a5.06,5.06,0,0,1-5.09,5H573.57a5,5,0,0,1-5.08-5V254.31a5,5,0,0,1,5.08-5H639.2a5.06,5.06,0,0,1,5.09,5Z"></path></g></svg></a>
+					<div class="over_textplace">
+						<a class="over_button" href="#">小米商城 |</a>
+						<a class="over_button" href="#">MIUI |</a>
+						<a class="over_button" href="#">米家 |</a>
+						<a class="over_button" href="#">米聊 |</a>
+						<a class="over_button" href="#">云服务 |</a>
+						<a class="over_button" href="#">有品 |</a>
+						<a class="over_button" href="#">小爱开放平台 |</a>
+						<a class="over_button" href="#">企业团购 |</a>
+						<a class="over_button" href="#">云服务 |</a>
+						<a class="over_button" href="#">有品 |</a>
+						<a class="over_button" href="#">小爱开放平台 |</a>
+						<a class="over_button" href="#">企业团购</a>
+						<a class="over_button" href="#">云服务 |</a>
+						<a class="over_button" href="#">有品 |</a>
+						<a class="over_button" href="#">小爱开放平台 |</a>
+						<a class="over_button" href="#">企业团购</a>
+						<p class="company">
+							&copy;mi.com 京ICP证110507号 京ICP备10046444号 京公网安备11010802020134号 京网文[2020]0276-042号
+		（京）网械平台备字（2018）第00005号 互联网药品信息服务资格证 (京)-非经营性-2014-0090 营业执照 医疗器械质量公告
+		增值电信业务许可证 网络食品经营备案 京食药网食备202010048   食品经营许可证
+		违法和不良信息举报电话：171-5104-4404 知识产权侵权投诉 本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
+						</p>
+					<div class="slogan"><img class="slogan_img" style="width: 500px; align:center;" src="img/slogan2020.png"></div>
+					</div>
+					</div>		
+				</div>
+		
+		
+		
+		
+		
+		
+		
+		</div>
+		<style>
+			.pro_jieshao{
+				color:RGB(255,105,0);
+			}
+			.miaosha1:hover{
+				background-color: RGB(244,244,244);
+			}
+			.miaosha2:hover{
+				background-color: RGB(244,244,244);
+			}
+			.miaosha3:hover{
+				background-color: RGB(244,244,244);
+			}
+			.miaosha4:hover{
+				background-color: RGB(244,244,244);
+			}
+			.miaosha5:hover{
+				background-color: RGB(244,244,244);
+			}
+			.products_class p{
+			/* 	text-align:center; */
+			}
+			.slogan_img{
+				display:flex;
+				right: 500px;
+			}
+			.company{
+				font-size: 6px;
+				color:#afafaf;
+				width: 820px;
+			}
+			.over_logo{
+				float: left;
+			}
+			.over_textplace{
+				height: 150px;
+				float: left;
+				margin:40px 0px 0px 40px;
+			}
+			.over_textplace a{
+				color:#616161;
+				font-size: 5px;
+				margin: 0px;
+				padding: 0px;
+			}
+			.jiange{
+				height:30px;
+				background-color: RGB(247,247,247);
+			}
+			.gezi1{
+				background-color: RGB(247,247,247);
+				text-align:center;
+			}
+			.gezi2{
+				background-color: white;
+				text-align:center;
+			}
+			.p_1{
+				margin-right:20px;
+			}
+			.p2_gongneng{
+				color:lightblue;
+				font-size: 10px;
+			}
+			.p_2 p{
+				font-size: 15px;
+				margin:0px;
+			}
+			.p_1 img{
+				width: 270px;
+				/* border: 2px solid red; */
+				Border-radius:20px;
+			}
+			.p_2 img{
+				width:200px;
+				/* border: 2px solid green; */
+			}
+			.p_2{
+				margin:20px;
+				/* border: 2px solid black; */
+				width:200px;
+			}
+			.pro_name{
+				/* margin:0px 0px 0px 5px; */
+			text-align:center;
+			font-weight:bold;
+			}
+			.pro_jieshao{
+			text-align:center;
+			font-size: 15px;
+			}
+			.miaosha_title{
+				background-color: RGB(218,232,239);
+				font-size: 30px;
+				padding:20px 0px 0px 5px;
+				font-weight: 500;
+			}
+			.miaosha{
+				background-color: RGB(218,232,239);
+			}
+			.miaosha img{
+				margin-top:9px;
+			}
+			.miaosha1,.miaosha2,.miaosha3,.miaosha5,.miaosha4{
+				/* border: 2px solid red; */
+				margin:30px 20px 20px 0px;
+				background-color: white;
+				border-radius:15px;
+			}
+			.phone_list{
+				/* border:2px solid red; */
+				height: 610px;
+				background-color: RGB(247,247,247);
+			}
+			.phone_list_1{
+				/* border: 2px solid blue; */
+				display:inline-block;
+				width:430px;
+				margin-left:20px;
+				border-radius:9px;
+				margin-top:20px;
+			}
+			.phone_list_1:hover{
+				border: 2px solid RGB(24,144,255);
+			}
+            body{
+                padding:0;
+                margin:0;
+            }
+            .lit_title{
+                background-color: RGB(51,51,51);
+                margin: 0px;   
+                padding:0px;   
+                height: 30px;
+                
+            }
+            .lit_title a{
+                color:RGB(176,176,160);
+                text-decoration:none;
+                font-size: 15px;
+            }
+            .lit_title a:hover{
+                color: white;
+            }
+            .lit_title_left span{
+                color:rgb(111, 111, 101) ;
+            }
+            .lit_title_right span{
+                color:rgb(111, 111, 101) ;
+            }
+            .menu_button{
+                padding-right: 6px;
+            }
+            .lit_title_left{
+                float:left;
+            }
+            .lit_title_right{
+                float:right;
+            }
+            
+        </style>
+        
+        
+        
+    </body>
+</html>

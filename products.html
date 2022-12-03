@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8" content="width=device-width, initial-scale=1.0">
+		<title>小米商城</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+		  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+		
+        <meta charset="utf-8">
+        <style>
+ 
+            .menu-bar {
+                height: 96px;
+            }
+            .menu-bar .container {
+                display: flex;
+                align-items: center;
+                height: 100%;
+            }
+ 
+            .menu-bar .container .col-2 {
+                 width: calc(100% / 6);
+                 height: 100%;
+            }
+            .menu-bar .container .col-8 {
+                 width: 66%;
+                 height: 100%;
+            }
+ 
+            .menu-list {
+                display: flex;
+                justify-content: center;
+                height: 100%;
+            }
+			.menu-list a{
+				font-size: 18px;
+				color:black;
+				text-decoration:none;
+				
+			}
+			.menu-list a:hover{
+				color:RGB(255,105,0);
+			}
+ 
+            .xiaomi-logo {
+                height: 100%;
+            }
+ 
+            .flex-center {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+ 
+            .menu-item {
+                padding: 0 8px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+            }
+ 
+            .bg-red {
+                background-color: red;
+            }
+ 
+            .bg-blue {
+                background-color: blue;
+            }
+ 
+            .bg-yellow {
+                background-color: yellow;
+            }
+			.class_shouji,.class_dianshi,.class_shoubiao,.class_dingzhi,.class_jiadian,.class_qiye,.class_xuesheng,.class_xinren,.class_xianshiqi{
+				width: 80px;
+				/* background-color: red; */
+				display: inline-block;	
+				margin-left:50px;
+			}
+			.products_class{
+				/* border:2px solid green; */
+				width: 1100px;
+				margin-top:20px;
+				
+			}
+			.lunbo{
+				/* width: 1300px; */
+				
+			}
+			body{
+			    padding:0;
+			    margin:0;
+			}
+			.lit_title{
+			    background-color: RGB(51,51,51);
+			    margin: 0px;   
+			    padding:0px;   
+			    height: 30px;
+			    
+			}
+			.lit_title a{
+			    color:RGB(176,176,160);
+			    text-decoration:none;
+			    font-size: 15px;
+			}
+			.lit_title a:hover{
+			    color: white;
+			}
+			.lit_title_left span{
+			    color:rgb(111, 111, 101) ;
+			}
+			.lit_title_right span{
+			    color:rgb(111, 111, 101) ;
+			}
+			.menu_button{
+			    padding-right: 6px;
+			}
+			.lit_title_left{
+			    float:left;
+			}
+			.lit_title_right{
+			    float:right;
+			}
+			
+        </style>
+    </head>
+    <body>
+        <div class="lit_title">
+            <div class="lit_title_left">
+                <a class="menu_button" href="home.html">小米官网</a><span>|<span>
+                <a class="menu_button" href="index.html">小米商城</a><span>|<span>
+                <a class="menu_button" href="#">MIUI</a><span>|<span>
+                <a class="menu_button" href="#">loT</a><span>|<span>
+                <a class="menu_button" href="#">云服务</a><span>|<span>
+                <a class="menu_button" href="#">天星数科</a><span>|<span>
+                <a class="menu_button" href="#">有品</a><span>|<span>
+                <a class="menu_button" href="#">小爱开放平台</a><span>|<span>
+                <a class="menu_button" href="#">企业团购</a><span>|<span>
+                <a class="menu_button" href="#">资质证照</a><span>|<span>
+                <a class="menu_button" href="#">协议规则</a><span>|<span>
+                <a class="menu_button" href="#">下载app</a><span>|<span>
+                <a class="menu_button" href="#">Select Location</a>
+            </div>
+            <div class="lit_title_right">
+                <a class="menu_button" href="#">登录</a>
+                <span>|</span>
+                <a class="menu_button" href="#">注册</a>
+                <span>|</span>
+                <a class="menu_button" href="#">消息通知</a>
+                <a class="menu_button" href="#">购物车</a>
+            </div>
+        </div>
+        <!-- LOGO和菜单栏 -->
+        <div class="menu-bar">
+            <div class="container">
+                <div class="col-2">
+                    <div class="xiaomi-logo flex-center">
+                            <svg style="width: 60px; margin:0px 20px 0px 0px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 808 808" class="mi-logo"><g data-v-777bda80=""><path data-v-777bda80="" fill="#ff6900" d="M723.79,84.42C647.55,8.48,537.94,0,404,0,269.89,0,160.12,8.58,83.92,84.72S0,270.43,0,404.39,7.74,648,84,724.14,269.9,808,404,808s243.85-7.71,320-83.86,84-185.78,84-319.75C808,270.25,800.16,160.54,723.79,84.42Z"></path> <path data-v-777bda80="" fill="#fff" d="M374.26,553.72a5,5,0,0,1-5.06,5H300.3a5.05,5.05,0,0,1-5.12-5V373.53a5.05,5.05,0,0,1,5.12-5h68.9a5,5,0,0,1,5.06,5Z"></path> <path data-v-777bda80="" fill="#fff" d="M509.18,553.72a5.05,5.05,0,0,1-5.09,5H438.5a5,5,0,0,1-5.1-5V398.26c-.07-27.15-1.62-55-15.64-69.06-12-12.09-34.51-14.86-57.88-15.44H241a5,5,0,0,0-5.07,5v235a5.07,5.07,0,0,1-5.12,5H165.16a5,5,0,0,1-5.06-5V254.31a5,5,0,0,1,5.06-5H354.52c49.49,0,101.22,2.26,126.74,27.81s27.92,77.3,27.92,126.85Z"></path> <path data-v-777bda80="" fill="#fff" d="M644.29,553.72a5.06,5.06,0,0,1-5.09,5H573.57a5,5,0,0,1-5.08-5V254.31a5,5,0,0,1,5.08-5H639.2a5.06,5.06,0,0,1,5.09,5Z"></path></g></svg></a> <span data-v-6f859fef=""> </span>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="menu-list flex-center">
+                        <a class="menu-item">Xiaomi手机</a>
+                        <a class="menu-item">Redmi手机</a>
+                        <a class="menu-item">电视</a>
+                        <a class="menu-item">笔记本</a>
+                        <a class="menu-item">平板</a>
+                        <a class="menu-item">家电</a>
+                        <a class="menu-item">路由器</a>
+                        <a class="menu-item">服务中心</a>
+                        <a class="menu-item">社区</a>
+                    </div>
+                </div>
+                <div style="font-size: 15px;"><input class="box namebox" type="text" name="name">&nbsp;搜索</div>
+            </div>
+        </div>
+		<hr>
+	<div class="name_title">
+		<h1>定制办公套装</h1>
+	</div>
+	<hr>
+	<div class="products_area">
+		<div class="pic_area">
+			<img src="img/pro1.jpg">
+		</div>
+		<div class="products_info">
+			<h1>定制办公套装</h1>
+			<h2>专属定制字母笔 | A5笔记本 | 随手记便利贴</h2>
+			<h3>小米自营</h3><h4>29.9元</h4>
+			<hr>
+		<div class="location">
+			<svg t="1669897273370" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2704" width="24" height="24"><path d="M854.6 289.1c-18.8-43.4-45.7-82.3-79.9-115.7-34.2-33.4-73.9-59.5-118.2-77.8C610.7 76.6 562.1 67 512 67c-50.1 0-98.7 9.6-144.5 28.5-44.3 18.3-84 44.5-118.2 77.8-34.2 33.4-61.1 72.4-79.9 115.7-19.5 45-29.4 92.8-29.4 142 0 70.6 16.9 140.9 50.1 208.7 26.7 54.5 64 107.6 111 158.1 80.3 86.2 164.5 138.9 188.4 153 6.9 4.1 14.7 6.1 22.4 6.1 7.8 0 15.5-2 22.4-6.1 23.9-14.1 108.1-66.8 188.4-153 47-50.4 84.3-103.6 111-158.1C867.1 572 884 501.8 884 431.1c0-49.2-9.9-97-29.4-142zM512 880.2c-65.9-41.9-300-207.8-300-449.1 0-77.9 31.1-151.1 87.6-206.3C356.3 169.5 431.7 139 512 139s155.7 30.5 212.4 85.9C780.9 280 812 353.2 812 431.1c0 241.3-234.1 407.2-300 449.1z" p-id="2705"></path><path d="M512 263c-97.2 0-176 78.8-176 176s78.8 176 176 176 176-78.8 176-176-78.8-176-176-176z m79.2 255.2C570 539.3 541.9 551 512 551c-29.9 0-58-11.7-79.2-32.8C411.7 497 400 468.9 400 439c0-29.9 11.7-58 32.8-79.2C454 338.6 482.1 327 512 327c29.9 0 58 11.6 79.2 32.8C612.4 381 624 409.1 624 439c0 29.9-11.6 58-32.8 79.2z" p-id="2706"></path></svg>
+		<p>安徽&nbsp;合肥市&nbsp;瑶海区&nbsp;七里站街道&nbsp;&nbsp;</p><p class="mi_color">有现货</p>
+		</div>
+		<div class="choose_color">
+			<p>选择颜色</p>
+			<div class="choose_button"><p>橙色</p></div>
+		</div>
+		<div class="jiesuan">
+			<p>定制办公套装 橙色  29.9元</p>
+			<h1>总计：29.9元</h1>
+		</div>
+		<div class="carts_button_group">
+			<div class="add_carts"><p>加入购物车</p></div>
+			<div class="add_like"><p>喜欢</p></div>
+		</div>	
+		</div>
+
+	</div>
+	<!-- 产品内容 -->
+	<div class="pro_pic">
+		<img src="img/pro2.jpg">
+		<img src="img/pro3.jpg">
+		<img src="img/pro4.jpg">
+		<img src="img/pro5.jpg">
+	</div>
+	<!-- 结尾内容 -->
+			<div class="over flex-center" style="background-color: RGB(250,250,250);">
+				<svg class="over_logo" style="width: 60px; margin:40px 0px 0px 40px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 808 808" class="mi-logo"><g data-v-777bda80=""><path data-v-777bda80="" fill="#ff6900" d="M723.79,84.42C647.55,8.48,537.94,0,404,0,269.89,0,160.12,8.58,83.92,84.72S0,270.43,0,404.39,7.74,648,84,724.14,269.9,808,404,808s243.85-7.71,320-83.86,84-185.78,84-319.75C808,270.25,800.16,160.54,723.79,84.42Z"></path> <path data-v-777bda80="" fill="#fff" d="M374.26,553.72a5,5,0,0,1-5.06,5H300.3a5.05,5.05,0,0,1-5.12-5V373.53a5.05,5.05,0,0,1,5.12-5h68.9a5,5,0,0,1,5.06,5Z"></path> <path data-v-777bda80="" fill="#fff" d="M509.18,553.72a5.05,5.05,0,0,1-5.09,5H438.5a5,5,0,0,1-5.1-5V398.26c-.07-27.15-1.62-55-15.64-69.06-12-12.09-34.51-14.86-57.88-15.44H241a5,5,0,0,0-5.07,5v235a5.07,5.07,0,0,1-5.12,5H165.16a5,5,0,0,1-5.06-5V254.31a5,5,0,0,1,5.06-5H354.52c49.49,0,101.22,2.26,126.74,27.81s27.92,77.3,27.92,126.85Z"></path> <path data-v-777bda80="" fill="#fff" d="M644.29,553.72a5.06,5.06,0,0,1-5.09,5H573.57a5,5,0,0,1-5.08-5V254.31a5,5,0,0,1,5.08-5H639.2a5.06,5.06,0,0,1,5.09,5Z"></path></g></svg></a>
+				<div class="over_textplace">
+					<a class="over_button" href="home.html">小米商城 |</a>
+					<a class="over_button" href="#">MIUI |</a>
+					<a class="over_button" href="#">米家 |</a>
+					<a class="over_button" href="#">米聊 |</a>
+					<a class="over_button" href="#">云服务 |</a>
+					<a class="over_button" href="#">有品 |</a>
+					<a class="over_button" href="#">小爱开放平台 |</a>
+					<a class="over_button" href="#">企业团购 |</a>
+					<a class="over_button" href="#">云服务 |</a>
+					<a class="over_button" href="#">有品 |</a>
+					<a class="over_button" href="#">小爱开放平台 |</a>
+					<a class="over_button" href="#">企业团购</a>
+					<a class="over_button" href="#">云服务 |</a>
+					<a class="over_button" href="#">有品 |</a>
+					<a class="over_button" href="#">小爱开放平台 |</a>
+					<a class="over_button" href="#">企业团购</a>
+					<p class="company">
+						&copy;mi.com 京ICP证110507号 京ICP备10046444号 京公网安备11010802020134号 京网文[2020]0276-042号
+	（京）网械平台备字（2018）第00005号 互联网药品信息服务资格证 (京)-非经营性-2014-0090 营业执照 医疗器械质量公告
+	增值电信业务许可证 网络食品经营备案 京食药网食备202010048   食品经营许可证
+	违法和不良信息举报电话：171-5104-4404 知识产权侵权投诉 本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
+					</p>
+				<div class="slogan"><img class="slogan_img" style="width: 500px; align:center;" src="img/slogan2020.png"></div>
+				</div>
+				</div>		
+			</div>
+	
+	
+	<style>
+		.flex-center {
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		}
+		.backtop{
+			background-color: #999999;
+			border-radius: 18px;
+			width: 50px;
+			height: 70px;
+			color:white;
+			font-size: 10px;
+			/* position:absolute;
+			/* border:2px solid red; */
+			
+			/* 绝对定位   
+			right:20px;
+			top:2900px; */
+			float: left;
+			
+		}
+		.backtop svg{
+			margin: 5px 0px 0px 10px;
+		}
+		.backtop p{
+			margin: 5px 0px 0px 13px;
+		}
+		.bg-active {
+		    background-color: #000;
+		}
+		.main_title{
+			height:70px;
+			width:100%;
+			position: fixed;
+			top: 0px;
+			background-color: #000;
+		}
+		.titlebg{
+			background-color: rgba(0,0,0,.85);
+		}
+		
+		
+		.slogan_img{
+			display:flex;
+			right: 500px;
+		}
+		.company{
+			font-size: 6px;
+			color:#afafaf;
+			width: 820px;
+		}
+		.over_logo{
+			float: left;
+		}
+		.over_textplace{
+			height: 150px;
+			float: left;
+			margin:40px 0px 0px 40px;
+		}
+		.over_textplace a{
+			color:#616161;
+			font-size: 5px;
+			margin: 0px;
+			padding: 0px;
+		}
+		.pro_pic img{
+			width: 100%;
+		}
+		.carts_button_group{
+			margin-top: 20px;
+			display:flex;
+		}
+		.add_carts{
+			background-color: RGB(239,99,21);
+			color: white;
+			padding-left: 75px;
+			padding-top:16px;
+			width: 230px;
+		}
+		.add_like{
+			/* background-color: antiquewhite; */
+			background-color: RGB(176,176,176);
+			color:white;
+			width: 180px;
+			padding-top:16px;
+			padding-left: 70px;
+			margin-left: 20px;
+		}
+		.add_carts:hover{
+			background-color:RGB(242,88,7);
+		}
+		.add_like:hover{
+			background-color:RGB(117,117,117);
+		}
+		.jiesuan p{
+			font-size: 15px;
+		}
+		.jiesuan h1{
+			margin-top: 30px;
+			font-size: 25px; 
+			color:RGB(239,99,21)
+		}
+		.jiesuan{
+			margin-top:50px;
+			background-color: RGB(249,249,250);
+			padding:30px;
+		}
+		.choose_button p{
+			margin:20px;
+			color:RGB(239,99,21)
+		}
+		.choose_color p{
+			font-size: 20px;
+			/* margin-left:0px; */
+		}
+		.choose_color{
+			margin-top:20px;
+		}
+		.choose_button{
+			border:1px solid RGB(239,99,21);
+			/* width: 0px; */
+		}
+		.choose_button
+		.mi_color{
+			color:RGB(239,99,21);
+		}
+		.location{
+			background-color: RGB(250,250,250);
+			border:1px solid RGB(224,224,224);
+			padding:20px 40px 20px 40px;
+			display:flex;
+		}
+		.location p{
+			margin-left:20px;
+		}
+		h4{
+			font-size: 20px;
+			color:RGB(239,99,21);
+		}
+		h3{
+			font-size: 15px;
+			color:RGB(239,99,21);
+		}
+		h2{
+			font-size: 15px;
+		}
+		h1{
+			font-size: 30px;
+		}
+		body{
+			margin:0;
+			padding:0;
+		}
+		.pic_area img{
+			width: 100%;
+		}
+		.name_title h1{
+			font-size: 20px;
+			margin-left:130px;
+			margin-top: 20px;
+		}
+			
+		.products_area{
+			display:flex;
+		}
+	</style>
+	
+	
+</body>
